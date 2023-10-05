@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("Family Life | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Click", "ButtonInfo", function()
+    print("Clicked")
+game.Players.LocalPlayer.Character:PivotTo(CFrame.new(812.4802856445312, 280.591552734375, 2926.5849609375))
+end)
